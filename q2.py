@@ -1,6 +1,6 @@
 from collections import deque
 
-def bfs_traversal(v, e, edges, source):
+def bfs_traversal(v, edges, source):
     # Create an adjacency list for the graph
     graph = [[] for _ in range(v)]
     for a, b in edges:
@@ -32,7 +32,7 @@ def main():
     source = int(input())
     
     # Perform BFS and print result
-    result = bfs_traversal(v, e, edges, source)
+    result = bfs_traversal(v, edges, source)
     print(" ".join(map(str, result)))
 
 if __name__ == "__main__":
